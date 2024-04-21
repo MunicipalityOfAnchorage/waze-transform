@@ -8,8 +8,10 @@ jobs:
   Anchorage-Waze-Transformation:
     runs-on: ubuntu-latest
     steps:
-    - name: Install Python
+    - name: checkout
       uses: actions/setup-python@v4
+    - name: Install Python
+      uses: actions/checkout@v3
       with:
         python-version: '3.10'  
     - name: Install Dependencies
