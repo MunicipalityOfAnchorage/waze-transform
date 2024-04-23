@@ -83,7 +83,7 @@ def run():
         logging.error(os_error)
         return
 
-    os.chmod(OUTPUT_CLOSURES_FILE, 644)
+    ## os.chmod(OUTPUT_CLOSURES_FILE, 644)
     logging.debug(f'Wrote Waze Feed Closures JSON files: {OUTPUT_CLOSURES_FILE}')
 
 print ("pre run")
