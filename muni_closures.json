@@ -1,1 +1,1 @@
-{"incidents": [{"id": 851, "type": "ROAD_CLOSED", "subtype": "ROAD_CLOSED_CONSTRUCTION", "description": "W. 7th Ave. btwn. K St. & L St.", "reference": "CEA", "starttime": "2024-07-01T00:00:00-08:00", "endtime": "2024-10-31T00:00:00-08:00", "location": {"direction": "BOTH_DIRECTIONS", "street": "W. 7th Ave.", "polyline": "-149.903060839373 61.2155964415784 -149.902223990161 61.2155990246267"}}]}
+{"incidents": []}
