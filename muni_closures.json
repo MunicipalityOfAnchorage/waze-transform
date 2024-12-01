@@ -1,1 +1,1 @@
-{"incidents": [{"id": 601, "type": "ROAD_CLOSED", "subtype": "ROAD_CLOSED_EVENT", "description": "Holiday Tree Lighting - E St. btwn. W. 5th Ave. and W. 6th Ave.", "reference": null, "starttime": "2024-11-30T11:00:00-09:00", "endtime": "2024-11-30T20:00:00-09:00", "location": {"direction": "ONE_DIRECTION", "street": "E St.", "polyline": "-149.89143307477 61.2175288253309 -149.891425028143 61.2166235094337"}}]}
+{"incidents": []}
