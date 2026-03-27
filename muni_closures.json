@@ -1,1 +1,1 @@
-{"incidents": [{"id": 1053, "type": "ROAD_CLOSED", "subtype": null, "description": "Cordova St. btwn. E. 1st Ave. and E. 2nd Ave.", "reference": null, "starttime": "2026-03-26T08:00:01-08:00", "endtime": "2026-03-26T12:00:00-08:00", "location": {"direction": "BOTH_DIRECTIONS", "street": "Cordova St.", "polyline": "-149.87922435778 61.2214738950309 -149.879193218659 61.2205844070931"}}]}
+{"incidents": []}
