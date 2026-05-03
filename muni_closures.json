@@ -1,1 +1,1 @@
-{"incidents": [{"id": 139, "type": "ROAD_CLOSED", "subtype": "ROAD_CLOSED_EVENT", "description": "Salmon Run: N St. btwn. 12th Ave. and 16th Ave.", "reference": null, "starttime": "2026-05-02T08:00:00-08:00", "endtime": "2026-05-02T12:00:00-08:00", "location": {"direction": "BOTH_DIRECTIONS", "street": "N St.", "polyline": "-149.9077695935 61.2106165670563 -149.907769595745 61.2069723384356 -149.910288082466 61.2069560099384 -149.910265444801 61.2061998892413"}}]}
+{"incidents": []}
