@@ -1,1 +1,1 @@
-{"incidents": []}
+{"incidents": [{"id": 1058, "type": "ROAD_CLOSED", "subtype": null, "description": "Richardson Dr. btwn Armstrong Ln. & Sterling Way", "reference": null, "starttime": "2026-06-01T00:00:00-08:00", "endtime": "2026-06-15T23:59:00-08:00", "location": {"direction": "BOTH_DIRECTIONS", "street": "Richardson Dr.", "polyline": "-149.773901859889 61.2048150214328 -149.774184418581 61.2045650355613 -149.774328581178 61.2044511524508"}}]}
