@@ -9,6 +9,8 @@ import pendulum
 from atomicwrites import atomic_write
 from config import JSONURL, TZ, DELAY, OUTPUT_CLOSURES_FILE
 
+print("configged")
+
 # === Get logging level if set and setup logging ===#
 parser = argparse.ArgumentParser(description="Starts the realtime protobuffer generator")
 parser.add_argument("--log", help="set the logging level")
@@ -34,13 +36,13 @@ def formatTime(t):
 
 def feature2Waze(feature):
     '''Convert geojson feature to waze closure'''
-    props = feature['properties']
+    props = feature['attributes']
     output = {
-        'id': feature['id'],
+        'id': props['OBJECTID'],
         'type': 'ROAD_CLOSED',
-        'subtype': props['subtype'],
+        # 'subtype': props['subtype'],
         'description': props['description'],
-        'reference': props['reference'],
+        # 'reference': props['reference'],
         'starttime': formatTime(props['starttime']),
         'endtime': formatTime(props['endtime']),
         'location': {
@@ -50,7 +52,7 @@ def feature2Waze(feature):
     }
 
     try:
-        output['location']['polyline'] = " ".join(str(p) for p in chain.from_iterable(feature['geometry']['coordinates']))
+        output['location']['polyline'] = " ".join(str(p) for p in chain.from_iterable(feature['geometry']['paths']))
     except KeyError:
         pass
 
@@ -59,8 +61,8 @@ def feature2Waze(feature):
 
 def filterRecords(r):
     return all([
-        r['properties'].get('starttime') is not None,
-        r['properties'].get('type') == 'Full'
+        r['attributes'].get('starttime') is not None
+        # r['properties'].get('type') == 'Full'
     ])
 
 
