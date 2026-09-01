@@ -52,7 +52,11 @@ def feature2Waze(feature):
     }
 
     try:
-        output['location']['polyline'] = " ".join(str(p) for p in chain.from_iterable(feature['geometry']['paths']))
+        # output['location']['polyline'] = " ".join(str(p) for p in chain.from_iterable(feature['geometry']['paths']))
+        coords = feature['geometry']['paths'][0]
+        # output['polyline'] = " ".join(f"{lat:.6f} {lon:.6f}" for lon, lat in coords)
+        output['location']['polyline'] =  " ".join(f"{lat} {lon}" for lon, lat in coords)
+
     except KeyError:
         pass
 
